@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cometorbityh.github.io/"/>
-  <updated>2019-08-24T08:53:52.882Z</updated>
+  <updated>2019-08-24T09:42:52.471Z</updated>
   <id>https://cometorbityh.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://cometorbityh.github.io/2019/08/24/%E7%9C%8B%E6%9D%BF%E5%A8%98/"/>
+    <id>https://cometorbityh.github.io/2019/08/24/看板娘/</id>
+    <published>2019-08-24T09:42:08.245Z</published>
+    <updated>2019-08-24T09:42:52.471Z</updated>
+    
+    <content type="html"><![CDATA[<p>大神水平：<br>大神作品，功能齐全。能说话、能换装、能玩游戏、能拍照、还能自定义。</p><p>下载 张书樵大神的项目，</p><p><a href="https://github.com/stevenjoezhang/live2d-widget" target="_blank" rel="noopener">https://github.com/stevenjoezhang/live2d-widget</a></p><p>解压到本地博客目录的themes/next/source下，修改autoload.js文件，如下：<br>将<br>const live2d_path = “<a href="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/&quot;" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/&quot;</a>;<br>1<br>改为<br>1<br>const live2d_path = “/live2d-widget/“;<br>1<br>在/themes/next/layout/_layout.swing中,新增如下内容：</p><script src="/live2d-widget/autoload.js"></script><p>1<br>在 主题配置文件 中,新增如下内容：<br>live2d:<br>  enable: true<br>1<br>2<br>想修改看板娘大小、位置、格式、文本内容等，可查看并修改 waifu-tips.js 、 waifu-tips.json 和 waifu.css。<br>大神水平，效果如下：</p><p> ————————————————<br>版权声明：本文为CSDN博主「潘高」的原创文章，遵循CC 4.0 by-sa版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/u011236348/article/details/88169549" target="_blank" rel="noopener">https://blog.csdn.net/u011236348/article/details/88169549</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;大神水平：&lt;br&gt;大神作品，功能齐全。能说话、能换装、能玩游戏、能拍照、还能自定义。&lt;/p&gt;
+&lt;p&gt;下载 张书樵大神的项目，&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/stevenjoezhang/live2d-widget&quot; target=&quot;_
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>test</title>
