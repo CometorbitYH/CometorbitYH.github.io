@@ -284,7 +284,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-08-26 11:37:50" itemprop="dateModified" datetime="2019-08-26T11:37:50+08:00">2019-08-26</time>
+                <time title="修改时间：2019-08-26 13:22:20" itemprop="dateModified" datetime="2019-08-26T13:22:20+08:00">2019-08-26</time>
               </span>
             
           
@@ -346,6 +346,7 @@
 
 <p>​     输出结果为page域的属性值（最小的域）</p>
 <p><img src="/2019/08/25/EL表达式/1566707944684.png" alt="1566707944684"></p>
+<p><img src="/2019/08/25/EL表达式/1566796930417.png" alt="1566796930417"></p>
 <h5 id="2-1-2-从指定域中获取数据"><a href="#2-1-2-从指定域中获取数据" class="headerlink" title="2.1.2  从指定域中获取数据"></a>2.1.2  从指定域中获取数据</h5><p>​    依次从四大域查找属性效率过低，为了提高效率，我们应该想想如何从指定域中直接获取某个属性值。</p>
 <p>​    EL有4个域属性空间相关的内置对象，分别为pageScope，requestScope，sessionScope，applicationScope。表示从对应域属性空间中查找指定key。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- EL01.jsp --&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;%</span><br><span class="line">		application.setAttribute(<span class="string">"name"</span>, <span class="string">"JAVA核心技术1"</span>);</span><br><span class="line">		session.setAttribute(<span class="string">"name"</span>, <span class="string">"JAVA核心技术2"</span>);</span><br><span class="line">		request.setAttribute(<span class="string">"name"</span>, <span class="string">"JAVA核心技术3"</span>);</span><br><span class="line">		pageContext.setAttribute(<span class="string">"name"</span>, <span class="string">"JAVA核心技术4"</span>);</span><br><span class="line">	%&gt;</span><br><span class="line">	&lt;!-- $&#123;属性名&#125;会按照从小到大的顺序依次从四大域中查找指定名称的属性值 --&gt;</span><br><span class="line">	name = $&#123;pageScope.name&#125;&lt;br/&gt;</span><br><span class="line">	name = $&#123;requestScope.name&#125;&lt;br/&gt;</span><br><span class="line">	name = $&#123;sessionScope.name&#125;&lt;br/&gt;</span><br><span class="line">	name = $&#123;applicationScope.name&#125;&lt;br/&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
