@@ -1,5 +1,7 @@
 /* global NexT, CONFIG */
 
+
+
 $(document).ready(function() {
 
   function initScrollSpy() {
@@ -30,10 +32,16 @@ $(document).ready(function() {
   initScrollSpy();
 });
 
+
+
 $(document).ready(function() {
   var html = $('html');
   var TAB_ANIMATE_DURATION = 200;
   var hasVelocity = $.isFunction(html.velocity);
+
+  
+    
+
 
   $('.sidebar-nav li').on('click', function() {
     var item = $(this);
@@ -84,6 +92,14 @@ $(document).ready(function() {
       }, 500);
   });
 
+  $(document).ready(function(){
+    $(document).on('click', '.fold_hider', function(){
+        $('>.fold', this.parentNode).slideToggle();
+        $('>:first', this).toggleClass('open');
+    });
+    //默认情况下折叠
+    $("div.fold").css("display","none");
+});
   // Expand sidebar on post detail page by default, when post has a toc.
   var $tocContent = $('.post-toc-content');
   var display = CONFIG.page.sidebar;
